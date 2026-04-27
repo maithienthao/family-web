@@ -63,7 +63,8 @@ nav {
   font-weight: normal;
 }
 .navbar li a:hover, .navbar .current a {
-  color: #331e16;
+  color: #11599c;
+  font-weight: bold;
 }
 #showcase {
     margin: 0 auto;
