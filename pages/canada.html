@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canada</title>
+    <link href="../style.css" rel="stylesheet">
+    <script src="../handlebars.min.js"></script>
+    <script id="template" type="text/x-handlebars-template">
+      {{#each canada}}
+        <article class="canada">
+            <img class="image" src={{this.image}}  alt={{this.name}}>
+            <section class="details">
+              <h3 class="name">{{this.name}}</h3>
+              <p class="description">{{this.description}}</p>
+            </section>
+          </article>
+        {{/each}}
+    </script>
+  </head>
+
+  <body id="canada-bg">
+    <header>
+      <section class="container">
+        <h2 class="branding">Family</h2>
+        <nav>
+        <ul class="navbar">
+            <li class="current">
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="vietnam.html">Vietnam</a>
+            </li>
+            <li>
+              <a href="hongkong.html">Hong Kong</a>
+            </li>
+            <li>
+              <a href="canada.html">Canada</a>
+            </li>
+            <li>
+              <a href="nz.html">New Zealand</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <article>
+      <section id="canada-open">
+        <div id="canada-open-text">
+          <h1 >Canada</h1>
+          <h3>Quê hương thứ hai, vùng đất có đủ bốn mùa trong năm, với nhiều thành viên nhất trong gia đình</h3>
+        </div>
+      </section>
+      <section id="canada-section2" class="section-padding">
+        <h3>Từ những ngày đầu mới bước chân đến</h3>
+        <div id="canada-img">
+          <img src="../images/canada/canada1.jpg" alt="Ngày đầu tại Canada">
+          <img src="../images/canada/canada2.jpg" alt="Chị em đi chơi">
+          <img src="../images/canada/canada3.jpg" alt="Annie đi học">
+        </div>
+      </section>
+      <section id="canada-section3" class="section-padding">
+        <h3>Tới những ngày đoàn tụ đông đủ.<br>Với những kỷ niệm được tạo ra cùng nhau mãi được trọn vẹn.</h3>
+        <div id="canada-img">
+          <img src="../images/canada/canada4.jpg" alt="Noel">
+          <img src="../images/canada/canada5.jpg" alt="Dã ngoại">
+          <img src="../images/canada/canada6.jpg" alt="Annie tốt nghiệp">
+        </div>
+      </section>
+     
+    </article>
+
+    <footer>
+      <p>&copy; Family</p>
+    </footer>
+
+    <script src="../main.js" type="text/javascript"></script>
+  </body>
+</html>

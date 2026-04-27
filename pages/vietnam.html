@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vietnam</title>
+    <link href="../style.css" rel="stylesheet">
+    <script src="../handlebars.min.js"></script>
+    <script id="template" type="text/x-handlebars-template">
+      {{#each vietnam}}
+        <article class="vietnam">
+            <img class="image" src={{this.image}}  alt={{this.name}} loading="lazy" >
+            <section class="details">
+              <h3 class="name">{{this.name}}</h3>
+              <p class="description">{{this.description}}</p>
+            </section>
+          </article>
+        {{/each}}
+    </script>
+  </head>
+
+  <body id="vietnam-bg">
+    <header>
+      <section class="container">
+        <h2 class="branding">Family</h2>
+
+        <nav>
+        <ul class="navbar">
+            <li class="current">
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="vietnam.html">Vietnam</a>
+            </li>
+            <li>
+              <a href="hongkong.html">Hong Kong</a>
+            </li>
+            <li>
+              <a href="canada.html">Canada</a>
+            </li>
+            <li>
+              <a href="nz.html">New Zealand</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <article id="showcase">
+        <h1 class="container">Việt Nam</h1>
+        <p class="container">Quê nhà Lagi với những khoảng thời gian quý báu cùng nhau, là nơi gặp gỡ vào mỗi mùa Tết hay những ngày nghỉ lễ, nơi để tận hưởng những mùa hoa nở và yên bình.</p>
+      <section class="container" id="information">
+
+      </section>
+    </article>
+
+    <footer>
+      <p>&copy; Family</p>
+    </footer>
+
+    <script src="../main.js" type="text/javascript"></script>
+  </body>
+</html>

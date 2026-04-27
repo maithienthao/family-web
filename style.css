@@ -1,0 +1,242 @@
+/* General Rulesets */
+* {
+  color: #331e16;
+}
+body {
+    font-family: Helvetica, sans-serif;
+	display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    padding-top: 80px;
+}
+.feature-image {
+    width: 100%;       /* Ảnh rộng bằng khung chứa */
+    max-width: 2500px;  /* Không cho ảnh quá to */
+    height: auto;      /* Giữ đúng tỷ lệ ảnh */
+    display: block;    /* Để có thể dùng margin auto */
+    margin: 20px auto; /* Căn giữa và tạo khoảng cách trên dưới */
+    border-radius: 8px; /* Bo góc ảnh cho hiện đại */
+    box-shadow: 0 4px 8px rgb(90, 89, 89); /* Tạo hiệu ứng nổi */
+}
+header {
+    position: fixed;
+    top: 0;           
+    left: 0;          
+    width: 100%;     
+    z-index: 1000;    /* Con số lớn để luôn nằm trên cùng */
+    background-color: rgb(168, 162, 162);
+    height: 70px;
+    padding: 10px 0;
+}
+
+footer {
+
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  background-color: rgb(168, 162, 162);
+  padding: 5px 0;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.branding {
+  float: left;
+}
+.branding h2 {
+  font-weight: normal;
+}
+nav {
+  float: right;
+}
+.navbar {
+  margin-top: 5%;
+}
+.navbar li {
+  display: inline-block;
+  padding: 0 5px;
+}
+.navbar li a {
+  color: #331e16;
+  font-weight: normal;
+}
+.navbar li a:hover, .navbar .current a {
+  color: #331e16;
+}
+#showcase {
+    margin: 0 auto;
+    flex: 1;
+}
+#showcase h1 {
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+#showcase p {
+    margin-top: 0;    
+    margin-bottom: 30px; 
+}
+#information {
+
+    display: flow-root;
+}
+
+#home-bg, #vietnam-bg, #nz-bg, #canada-bg {
+    position: relative; 
+    min-height: 100vh;
+    margin: 0;
+}
+#home-bg::before{
+    content: "";
+    background: url("images/home-bg.jpg");
+    background-size: cover;
+    opacity: 0.5; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Đẩy lớp nền ra phía sau nội dung */
+}
+
+#vietnam-bg::before, #nz-bg::before, #canada-bg::before {
+    content: "";
+    background-size: cover;
+    opacity: 0.5; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+#vietnam-bg::before { 
+    background-image: url("../images/vietnam/vietnam-bg.WebP"); 
+}
+#nz-bg::before { 
+    background-image: url("../images/nz/nz-bg.WebP"); 
+}
+#canada-bg::before { 
+    background-image: url("../images/canada/canada-bg.jpg"); 
+}
+.vietnam, .nz {
+    display: flex;
+    flex-direction: column; /* Xếp theo cột dọc */
+    align-items: center;    /* Căn giữa tất cả các phần tử con theo chiều ngang */
+    text-align: center;     /* Căn giữa nội dung văn bản (h3, p) */
+    margin-bottom: 20px;    /* Khoảng cách giữa các bài viết */
+    width: 100%;
+}
+.vietnam .image, .nz .image {
+    width: 100%;            /* Chiều rộng chiếm hết container cha (hoặc đặt 80% nếu muốn nhỏ lại) */
+    max-width: 600px;       /* Giới hạn chiều rộng tối đa để ảnh không quá to trên màn hình máy tính */
+    object-fit: cover;      /* Giúp ảnh không bị méo, tự động cắt phần thừa để khớp tỉ lệ */
+    border-radius: 12px;    /* Bo góc cho đẹp */
+    margin: 0 auto 0 auto;   /* Khoảng cách giữa ảnh và tiêu đề bên dưới */
+    display: block;
+}
+.vietnam .name, .nz .name {
+    margin-top: 8px;      /* khoảng cách phía trên tiêu đề */
+    margin-bottom: 0px; /* Khoảng cách nhỏ giữa tên và mô tả */
+}
+.details {
+    max-width: 700px;       /* Giới hạn độ rộng của văn bản */
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+.hongkong-section1 {
+    background: url("../images/hongkong/hongkong-bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    width: 100%;
+    min-height: 80vh;
+    padding: 50px 0;
+    text-align: center;
+}
+.hongkong-section1 h1, .hongkong-section1 h3 {
+    color: #ffffff; 
+}
+.hongkong-section2 {
+    background-color: #ebebc5;
+    background-size: cover;
+}
+.hongkong-section2-item1 {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    min-height: auto;
+    margin: 0 auto;
+    padding: 40px 0 20px 0;
+}
+.hongkong-section2-item2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+.hongkong-section2-item2 img {
+    width: 100%; 
+    max-width: 900px;              
+    height: auto;
+    border-radius: 12px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.hongkong-section3 {
+    background: url("../images/hongkong/hongkong-bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 40vh;
+    bottom: 0;
+}
+
+#canada-open {
+    position: relative;
+    min-height: 70vh;
+    width: 100%;
+    padding: 50px 0;
+    background: url("../images/canada/canada-open-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+}
+#canada-open h1, #canada-open h3 {
+    color:#ffffff;
+}
+#canada-open-text {
+    background: rgba(135, 167, 163, 0.1); 
+    backdrop-filter: blur(10px); 
+    padding: 15px 30px;
+    border-radius: 8px;
+    display: inline-block;
+}
+#canada-section2 h3, #canada-section3 h3 {
+    text-align: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+#canada-img {
+    display: flex;            
+    justify-content: center;  
+    gap: 20px;             
+    flex-wrap: wrap;         
+}
+#canada-img img{
+    max-width: 500px;
+    height: auto;
+    border-radius: 25px;
+    border-color: rgb(20, 27, 41);
+    object-fit: cover;
+}
+#canada-section3 {
+      margin-bottom: 50px;
+}
