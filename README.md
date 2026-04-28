@@ -1,5 +1,5 @@
 # Family website
-## Live demo: https://github.com/maithienthao/family-web/
+## Live demo: https://maithienthao.github.io/family-web/
 ## Tech Stack:
 - **Frontend**: HTML, CSS, JavaScript.
 - **Tools**: VS Code, Git, GitHub.
